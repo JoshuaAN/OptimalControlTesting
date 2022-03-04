@@ -9,7 +9,7 @@ def clamp(x, low, high):
 
 # Given an intial starting velocity and time, and ending velocity and time,
 # solve the optimal velocity at the time midpoint (t0 + t1) / 2.
-# TODO: add lagrange multipliers to show full extent of recursive generation since this heuristic may not work in all cases
+# TODO: add lagrange multipliers to show full extent of recursive generation since this type of heuristic may not work for future problems
 def solve_midpoint_velocity(states, v0, v1, t0, t1, reference, depth):
     if depth == 0:
         return
